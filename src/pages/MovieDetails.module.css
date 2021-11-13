@@ -1,0 +1,79 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  max-width: 400px;
+  margin: 15px;
+  height: auto;
+  width: 80%;
+}
+
+.movieImage {
+  border-radius: 15px;
+}
+
+.movieDetails {
+  font-size: 1.5rem;
+}
+
+.firstItem {
+  margin-top: 0;
+}
+
+.button {
+  	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	height: 40px;
+	background: #fff;
+	color: #141414;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.button span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 35%;
+}
+
+.button .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.button svg {
+	color: #fff;
+	width: 35px;
+	height: 35px;
+}
+
+.button:hover {
+	background: #e60073;
+}
+
+.button:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.button:hover span {
+	left: 20px;
+}
